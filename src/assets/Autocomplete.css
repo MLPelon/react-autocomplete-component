@@ -1,0 +1,83 @@
+.autocomplete-react-com{
+	position:relative;
+}
+.autocomplete-react-com *:focus {outline: none; }
+.autocomplete-react-com .listHolder{
+    -webkit-align-content: flex-start;
+    align-content: flex-start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    background-color: #FFF;
+    border: 1px solid #CCC;
+    border-radius: 2px;
+    box-shadow: inset 0 2px 3px rgba(0,0,0,.08);
+    color: #505050;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-font-smoothing: antialiased;
+    transition: border-color linear .15s,box-shadow linear .15s;
+	height:58px;
+}
+.autocomplete-react-com .selectedItem{
+	align-items: center;
+    background-color: #333;
+    border-radius: 3px;
+    color: #fff;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: none;
+    flex: none;
+    height: 24px;
+    margin: 1px;
+    max-width: 100%;
+    padding: 2px 10px;
+}
+.autocomplete-react-com .selectedItemRemove{cursor: pointer;
+    font-size: 8px;
+    margin-left: 8px;
+    vertical-align: top;}
+.autocomplete-react-com .entryText{
+	background-color: transparent;
+	border: none;
+	box-shadow: none;
+	-webkit-flex: 1;
+	flex: 1;
+	color: #222;
+    -webkit-font-smoothing: antialiased;
+    padding: 7px;
+}
+.autocomplete-react-com .autoSuggestions{
+	max-height:200px;
+	overflow-x:hidden;
+    overflow-y:auto;
+    background: #fff;
+    border: 1px solid #D2D2D2;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    display: none;
+    font-size: 13px;
+    list-style: none;
+    margin: 0;
+    min-width: 220px;
+    opacity: 0;
+    padding: 0 0 5px;
+    position: absolute;
+    text-align: left;
+    width: 100%;
+    z-index: 110;	
+}
+.autocomplete-react-com .autoSuggestions.visible{
+  display: block;
+  opacity: 1;
+}
+.autocomplete-react-com .autoSuggestions div{
+  padding:5px;
+}
+.autocomplete-react-com .autoSuggestions div:hover{
+  background-color:#eee;
+  cursor:pointer;
+}
